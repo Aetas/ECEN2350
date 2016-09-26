@@ -1,0 +1,25 @@
+/*************************
+ * Derek Prince          *
+ * Problem Set #5        *
+ * Problem 2             *
+ * Circuit 1 description *
+*************************/
+
+module circuit_01(y1, x1, x2, x3, x4);
+  // I/O
+  output y1;
+  input x1, x2, x3, x4;
+  
+  // structure
+  // nots
+  not (nx3, x3), (nx4, x4);
+  // minterms
+  and (a, x1, nx3);
+  and (b, x2, nx3);
+  and (c, nx3, nx4);
+  and (d, x1, x2);
+  and (e, x1, nx4);
+  // sum
+  or (y1, a, b, c, d, e);
+  
+endmodule //circuit_01

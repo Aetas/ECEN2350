@@ -1,0 +1,80 @@
+/*************************
+ * Derek Prince          *
+ * Problem Set #5        *
+ * Problem 2             *
+ * Circuit 1 description *
+*************************/
+
+module circuit_01(y1, x1, x2, x3, x4);
+  // I/O
+  output y1;
+  input x1, x2, x3, x4;
+
+  // structure
+  // nots
+  not (nx3, x3), (nx4, x4);
+  // minterms
+  and (a, x1, nx3);
+  and (b, x2, nx3);
+  and (c, nx3, nx4);
+  and (d, x1, x2);
+  and (e, x1, nx4);
+  // sum
+  or (y1, a, b, c, d, e);
+
+endmodule //circuit_01
+
+/*************************
+ * Derek Prince          *
+ * Problem Set #5        *
+ * Problem 2             *
+ * Circuit 2 description *
+*************************/
+
+module circuit_02(y2, x1, x2, x3, x4);
+  // I/O
+  output y2;
+  input x1, x2, x3, x4;
+
+  // structure
+  // nots
+  not (nx3, x3), (nx4, x4);
+  // maxterms
+  or (a, x1, nx3);
+  or (b, x1, x2, nx4);
+  or (c, x2, nx3, nx4);
+  // output
+  and (y2, a, b, c);
+
+endmodule //circuit_01
+
+/***********************
+ * Derek Prince        *
+ * Problem Set #5      *
+ * Problem 2           *
+ * Circuit testbench   *
+***********************/
+
+`timescale 1ns/1ns  //Play around with this when done
+module circuit_01_tb1();
+
+  reg clk;        // clock
+  reg[3:0] count; // 4-bit register for inputs
+  wire y1;         // output
+  wire y2;
+
+  initial begin   // initialize
+    clk = 1;
+    count = -1;   // so the start value will be 0
+  end
+
+  always #5 clk = ~clk; // generate clk (bitwise)
+  always @(posedge clk)
+    count = count + 1;  // count += 1; ?
+
+  // instantiate citcuit 1 module
+  circuit_01 MUT1(y1, count[3], count[2], count[1], count[0]);
+  // instantiate circuit 2 module
+  circuit_02 MUT2(y2, count[3], count[2], count[1], count[0]);
+
+endmodule // circuit_01_tb1

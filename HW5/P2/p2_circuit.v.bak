@@ -1,0 +1,24 @@
+/*******************
+ * Derek Prince    *
+ * Problem Set #5  *
+ * Problem 2       *
+********************/
+
+module circuit_01(y, x1, x2, x3, x4);
+  // I/O
+  output y;
+  input x1, x2, x3, x4;
+  
+  // structure
+  // nots
+  not (nx3, x3), (nx4, x4);
+  // minterms
+  nand (a, x1, nx3);
+  nand (b, x2, nx3);
+  nand (c, nx3, nx4);
+  nand (d, x1, x2);
+  nand (e, x1, nx4);
+  // sum
+  or (y, a, b, c, d, e);
+  
+endmodule //circuit_01
