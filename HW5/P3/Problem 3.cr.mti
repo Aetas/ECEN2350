@@ -1,0 +1,22 @@
+C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P3/P3_Circuit_01_tb1.v {1 {vlog -work work C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P3/P3_Circuit_01_tb1.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module circuit_tb1
+
+Top level modules:
+	circuit_tb1
+
+} {} {}} C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P3/P3_Circuit_01.v {1 {vlog -work work C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P3/P3_Circuit_01.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module circuit_01
+
+Top level modules:
+	circuit_01
+
+} {} {}} C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P3/P3_Circuit_02.v {1 {vlog -work work C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P3/P3_Circuit_02.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module circuit_02
+
+Top level modules:
+	circuit_02
+
+} {} {}}
