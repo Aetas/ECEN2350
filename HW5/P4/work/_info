@@ -1,0 +1,62 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aetas\Documents\GitProjects\ECEN2350\test1
+vcircuit_01
+Z1 !s100 VHN2e9;`L>3AXg]8E;mj`2
+Z2 IT7>nO:EaoSoA<Yi]hDS@N2
+Z3 Vkb=@z72E;M7i<<S0_]jhF0
+Z4 dC:\Users\Aetas\Documents\GitProjects\ECEN2350\HW5\P4
+Z5 w1474847471
+Z6 8C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_Circuit_01.v
+Z7 FC:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_Circuit_01.v
+L0 8
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_Circuit_01.v|
+Z10 o-work work -O0
+Z11 !s108 1474847755.896000
+Z12 !s107 C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_Circuit_01.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcircuit_02
+!i10b 1
+Z13 !s100 Dj@5PL11CFAZ^BNAVP0ni2
+Z14 Ii8L8W;SSkmMU5Hm_DeNC92
+Z15 VWjVIPSh9FnXoC4LDTdAjh0
+R4
+Z16 w1474847482
+Z17 8C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_Circuit_02.v
+Z18 FC:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_Circuit_02.v
+L0 8
+R8
+r1
+!s85 0
+31
+!s108 1474847756.289000
+!s107 C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_Circuit_02.v|
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_Circuit_02.v|
+!s101 -O0
+R10
+vp4_tb1
+Z20 !s100 CQF@?GB3KlN2cY@dQBFg_0
+Z21 Ib3C3]ZDTG1UV]P_AdGN610
+Z22 V>D8oKVdo00:[agGz?J9H[3
+R4
+Z23 w1474847450
+Z24 8C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_circuit_tb1.v
+Z25 FC:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_circuit_tb1.v
+L0 9
+R8
+r1
+31
+Z26 !s90 -reportprogress|300|-work|work|C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_circuit_tb1.v|
+R10
+!i10b 1
+!s85 0
+Z27 !s108 1474847756.048000
+Z28 !s107 C:/Users/Aetas/Documents/GitProjects/ECEN2350/HW5/P4/P4_circuit_tb1.v|
+!s101 -O0
