@@ -1,0 +1,31 @@
+/*************************
+ * Derek Prince          *
+ * Problem Set #5        *
+ * Problem 4             *
+ * Testbench             *
+*************************/
+
+`timescale 1ns/1ns
+module p4_tb1();
+  
+  reg clk;            //clockity-clock
+  reg [2:0] count;    //3-bit counter
+  wire y1, y2;        //outputs
+  wire x1, x2, x3;    //inputs
+  
+  initial begin     //initialize
+    clk = 1;
+    count = -1;     //avoid starting at 1
+  end
+  
+  always #5 clk = ~clk; // generate clock signal
+  always @(posedge clk) //increment
+    count = count + 1;
+  
+  circuit_01 MUT1(y1, x1, x2, x3);  //OG circuit
+  circuit_02 MUT2(y2, x1, x2, x3);  //circuit-to-be-checked
+  assign x1 = count[2]; 
+  assign x2 = count[1];
+  assign x3 = count[0];
+  
+endmodule // p4_tb1
